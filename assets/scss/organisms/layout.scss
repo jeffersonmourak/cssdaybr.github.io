@@ -232,17 +232,17 @@
 
         /*  Subscribe
             ========================================================================== */
-            .hold-subscribe { background-color: $yellow; }
+            .hold-subscribe { background-color: $blue; }
 
             .hold-subscribe .title,
-            .hold-subscribe p { color: $gray; }
+            .hold-subscribe p { color: #FFF; }
 
             .hold-subscribe .btn {
-              border-color: $green;
-              color: $green;
+              border-color: #FFF;
+              color: #FFF;
 
               &:hover {
-                background: $green;
+                background: #FFF;
                 color: $yellow;
               }
             }

@@ -12,6 +12,8 @@
     /*  ==========================================================================
         Colors
         ========================================================================== */
+        $purple: #33184c;
+        $pink: #f31d4f;
         $green: #0ba14b;
         $yellow: #ffde16;
         $blue: #20409a;
@@ -20,6 +22,6 @@
         $gray-white: #f5f5f5;
 
         $color-default:     #444;
-        $color-primary:     $green;
-        $color-secondary:   $yellow;
+        $color-primary:     $purple;
+        $color-secondary:   $pink;
         $color-terciary:    $blue;

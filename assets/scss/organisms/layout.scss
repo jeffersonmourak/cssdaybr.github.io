@@ -4,41 +4,35 @@
 
     @media only screen {
 
+        body {
+            padding-top: 68px;
+        }
+
         /*  Line
             ========================================================================== */
             .line {
-                border-top: solid 5px $yellow;
+                border-top: solid 5px $color-primary;
             }
 
             .line-bottom {
                 border-top: none;
-                border-bottom: solid 5px $yellow;
+                border-bottom: solid 5px $color-primary;
             }
 
-            .line:after,
             .line:before {
                 top: -5px;
                 z-index: 1;
                 position: absolute;
                 content: "";
-                width: 34%;
+                width: 50%;
                 height: 5px;
+                right: 0;
+                background-color: $color-secondary;
              }
 
-             .line-bottom:after,
              .line-bottom:before {
                 top: auto;
                 bottom: -5px;
-             }
-
-             .line:before {
-                left: 0;
-                background-color: $green;
-             }
-
-             .line:after {
-                right: 0;
-                background-color: $blue;
              }
 
 
@@ -113,11 +107,15 @@
                 z-index: -999999999;
             }
 
+
         /*  Date
             ========================================================================== */
-            .hold-date { background-color: $green; }
+            .hold-date { background-color: $color-secondary; }
 
-            .hold-date .title { margin-bottom: 0; }
+            .hold-date .title {
+                color: #FFF;
+                margin-bottom: 0;
+            }
 
             .title-date { font-size: 48px; }
 
@@ -129,7 +127,7 @@
         /*  Local
             ========================================================================== */
            .hold-local {
-                background: transparent url(../img/maksoud-plaza.jpg) center center no-repeat;
+                background: transparent url(../img/cesmac.jpg) center center no-repeat;
                 @include background-size(cover);
                 padding-top: 100px;
                 padding-bottom: 100px;
@@ -184,13 +182,13 @@
 
         /*  Speakers
             ========================================================================== */
-            .hold-speakers { background-color: $yellow; }
+            .hold-speakers { background-color: $color-primary; }
 
             .hold-speakers .title,
-            .hold-speakers p { color: darken($yellow, 42%); }
+            .hold-speakers p { color: #FFF; }
 
             .hold-speakers hr {
-                border: solid 1px darken($yellow, 20%);
+                border: solid 1px darken($color-primary, 20%);
                 border-left: none;
                 border-right: none;
                 border-bottom: none;
@@ -232,20 +230,10 @@
 
         /*  Subscribe
             ========================================================================== */
-            .hold-subscribe { background-color: $blue; }
+            .hold-subscribe { background-color: $color-secondary; }
 
             .hold-subscribe .title,
             .hold-subscribe p { color: #FFF; }
-
-            .hold-subscribe .btn {
-              border-color: #FFF;
-              color: #FFF;
-
-              &:hover {
-                background: #FFF;
-                color: $yellow;
-              }
-            }
 
         /*  Host
             ========================================================================== */

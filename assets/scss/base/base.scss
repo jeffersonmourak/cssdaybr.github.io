@@ -56,7 +56,7 @@
 
     .hover-3d:hover { text-decoration: none; }
     .hover-3d:hover span {
-        background-color: $green;
+        background-color: $color-secondary;
         @include transform(translate3d( 0px, 0px, -30px ) rotateX( 90deg ));
         text-decoration: none;
     }
@@ -78,20 +78,10 @@
         top: 0;
         padding: 2px 5px;
         color: #fff;
-        background-color: $green;
+        background-color: $color-secondary;
         @include origin(50%, 0%);
         @include transform(translate3d( 0px, 105%, 0px ) rotateX( -90deg ));
     }
-
-    .hover-3d-yellow:hover span,
-    .hover-3d-yellow span:after { background-color: $yellow; }
-
-    .hover-3d-yellow span:after { color: $blue; }
-
-    .hover-3d-green:hover span,
-    .hover-3d-green span:after { background-color: $green; }
-
-    .hover-3d-green span:after { color: #fff; }
 
     /* Esconde elemento para todos usuários exceto leitores de tela */
     .sr-only {

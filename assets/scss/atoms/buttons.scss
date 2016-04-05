@@ -19,7 +19,6 @@
                 padding: 20px 70px;
                 line-height: 1.2;
                 @include transition(background 0.25s ease);
-                font-family: 'gabriolaregular';
             }
 
             .btn:hover,
@@ -31,25 +30,35 @@
             /*  Default
                 ========================================================================== */
                 .btn {
-                    border-color: $green;
-                    color: $green;
+                    border-color: $color-secondary;
+                    color: $color-secondary;
                 }
 
                 .btn:hover,
                 .btn:focus {
-                  background-color: darken($green, 10%);
+                  background-color: darken($color-secondary, 10%);
                   color: #fff;
                 }
 
-                .btn-yellow {
-                    border-color: $yellow;
-                    color: $yellow;
+                .btn-primary {
+                    border-color: $color-primary;
+                    color: $color-primary;
                 }
 
-                .btn-yellow:hover,
-                .btn-yellow:focus {
-                  background-color: $yellow;
-                  color: $blue;
+                .btn-primary:hover,
+                .btn-primary:focus {
+                  background-color: $color-primary;
+                }
+
+                .btn-invert {
+                    background-color: $color-secondary;
+                    color: #FFF;
+                }
+
+                .btn-invert:hover,
+                .btn-invert:focus {
+                  background-color: transparent;
+                  color: $color-secondary;
                 }
 
         /*  Variations

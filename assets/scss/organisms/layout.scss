@@ -68,7 +68,7 @@
                 margin: -75px 0 0 -75px;
                 border-radius: 50%;
                 border: 3px solid transparent;
-                border-top-color: $green;;
+                border-top-color: $color-primary;
                 z-index: 1001;
                 @include animation(spin 2s linear infinite);
                 @include transition(opacity .5s ease);
@@ -83,7 +83,7 @@
                 bottom: 5px;
                 border-radius: 50%;
                 border: 3px solid transparent;
-                border-top-color: $yellow;
+                border-top-color: $color-secondary;
                 @include animation(spin 3s linear infinite);
             }
 
@@ -96,7 +96,7 @@
                 bottom: 15px;
                 border-radius: 50%;
                 border: 3px solid transparent;
-                border-top-color: $blue;
+                border-top-color: $color-primary;
                 @include animation(spin 1.5s linear infinite);
             }
 

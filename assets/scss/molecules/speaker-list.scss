@@ -34,7 +34,7 @@
 
         .speaker-thumb:before {
             content: "";
-            background-color: rgba(11,161,75, .5);
+            background-color: rgba($color-primary, .5);
             opacity: 0;
             @include transform(translateY(-100%));
             @include transition(all .3s ease);
@@ -98,7 +98,7 @@
             margin: 15px 20px;
         }
 
-        .speaker-thumb { max-width: 200px; }
-        .speaker-thumb:after { line-height: 200px; }
+        .speaker-thumb { max-width: 190px; }
+        .speaker-thumb:after { line-height: 190px; }
 
     }

@@ -40,7 +40,9 @@
             .box-speaker-media {
                 position: relative;
                 max-width: 150px;
-                border: $green 5px solid;
+                border: $color-primary 5px solid;
+                border-top-color: $color-secondary;
+                border-left-color: $color-secondary;
                 margin: 0 5px 10px;
                 display: inline-block;
 
@@ -52,9 +54,9 @@
 
             .sub-title {
                 font-size: 18px;
+                font-family: Helvetica, Arial, sans-serif;
                 margin: 5px 0 20px;
                 letter-spacing: 1.5px;
-                text-transform: uppercase;
             }
 
             .talk-time { margin: 10px 0 0; }
@@ -63,6 +65,7 @@
 
         .timeline-warning {
             font-size: 12px;
+            font-family: Helvetica, Arial, sans-serif;
             margin-top: 20px;
         }
 
@@ -129,8 +132,8 @@
 
             .box-talk:before {
                 content: "";
-                border: 3px solid $green;
-                background: $yellow;
+                border: 3px solid $color-secondary;
+                background: $color-primary;
                 height: 10px;
                 position: absolute;
                 top: 2px;

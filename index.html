@@ -65,6 +65,7 @@
                 <ul class="nav-list">
                     <li class="nav-item"><a class="nav-link" href="#palestrantes">Palestrantes</a></li>
                     <li class="nav-item"><a class="nav-link" href="#programacao">Programação</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#patrocinadores">Patrocinadores</a></li>
                     <li class="nav-item"><a class="nav-link" href="#local">Local</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
                 </ul>
@@ -297,6 +298,7 @@
                             <div class="box-talk">
                                 <h3 class="talk-time">14:00 - 14:45</h3>
                                 <h4 class="sub-title">Jogos com CSS</h4>
+                                <p>Quem disse que CSS é apenas algo bonitinho e "estático" que só serve para estilizar sites? Com uma pitada de desafio e um toque especial de diversão iremos embarcar em um mundo pouco explorado, o mundo dos jogos com CSS.</p>
                             </div>
                         </li>
                         <li>
@@ -363,16 +365,19 @@
             <div class="section-content">
                 <div class="row">
                     <h2 class="title title-section">Patrocinadores</h2>
-                    <!--
-                    <div class="partners-group">
-                        <h3 class="title title-small">Apoio e Parceria</h3>
-                        <figure class="partner-logo partner-support">
-                            <a href="http://www.eventick.com.br" target="_blank">
-                                <img src="build/img/eventick.png" alt="Logo da Eventick">
-                            </a>
-                        </figure>
-                    </div>
-                    -->
+
+                    <!-- BrazilJS snippet -->
+                    <div id='braziljs-widget-partners'></div>
+                    <script src='https://braziljs.org/js/widget.js'></script>
+                    <script>
+                        BrazilJS.widget.load('partners', {
+                            eventId: '5716cfdbcd87e09b3c996c20',
+                            name: 'CSS Day',
+                            theme: 'white',
+                            container: document.getElementById('braziljs-widget-partners')
+                        });
+                    </script>
+                    <!-- end of BrazilJS snippet -->
 
                     <p>Patrocine/Apoie o CSSday e valorize sua marca!
                         <span class="block">

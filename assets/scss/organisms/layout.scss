@@ -3,11 +3,6 @@
     ========================================================================== */
 
     @media only screen {
-
-        body {
-            padding-top: 68px;
-        }
-
         /*  Line
             ========================================================================== */
             .line {
@@ -126,6 +121,10 @@
 
         /*  Intro
             ========================================================================== */
+            .intro {
+                background: $color-secondary url(/build/img/backgrounds/cssdaybr-2016-crew.jpg) no-repeat center;
+                background-size: cover;
+            }
 
             .price {
                 font-size: 26px;
@@ -195,7 +194,10 @@
 
         /*  Speakers
             ========================================================================== */
-            .hold-speakers { background-color: $color-primary; }
+            .hold-speakers {
+                background: $color-primary url(/build/img/backgrounds/cssdaybr-2016-speakers.jpg) no-repeat center center;
+                background-size: cover;
+            }
 
             .hold-speakers .title,
             .hold-speakers p { color: #FFF; }
